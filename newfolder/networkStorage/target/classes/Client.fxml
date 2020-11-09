@@ -1,0 +1,20 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TreeView?>
+<VBox fx:controller="packageClient.ClientControler"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <TextArea fx:id="textAreaStorage"  VBox.vgrow="ALWAYS"/>
+    <HBox>
+        <TextField fx:id="textFieldSend" HBox.hgrow = "ALWAYS" promptText="Введите имя файла с расширением..."  />
+        <Button fx:id="buttonSend" HBox.hgrow="ALWAYS" text="Отправить" onAction="#actionButtonSend"  />
+    </HBox>
+    <HBox>
+        <TextField fx:id = "textFieldGetFile" HBox.hgrow = "ALWAYS" promptText="Введите имя файла с расширением..." />
+        <Button fx:id ="buttonGetFile" HBox.hgrow="ALWAYS" text = "Получить " onAction="#actionButtonGetFile" />
+    </HBox>
+
+</VBox>
